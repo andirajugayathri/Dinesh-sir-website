@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Gourisetty - Architect of Change</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .section-heading h2{
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1c3f59;
+            font-weight: 700;
+        }
+        .political {
+            max-width: 1300px;
+            margin: 0px auto;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        /* .content-card {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        } */
+        /* .content-card:hover {
+            border-radius: 20px;
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        } */
+        .content-image {
+            height: 380px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .content-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        .content-card:hover .content-image img {
+            transform: scale(1.1);
+        }
+        .content-details {
+            padding: 25px;
+        }
+        .content-title {
+            color: #275273;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .content-text {
+            margin-bottom: 20px;
+        }
+        .list-styled {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        .list-styled li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .list-styled li:before {
+            content: "•";
+            position: absolute;
+            left: -20px;
+            color: #275273;
+            font-weight: bold;
+        }
+        .cultural-section {
+            padding: 5rem 0;
+        }
+        
+        /* .section-heading {
+            margin-bottom: 3rem;
+            color: #275273;
+            text-align: center;
+        }
+        
+        .section-heading h2 {
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-heading h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 3px;
+            background-color: #275273;
+        } */
+        
+        .cultural-image {
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .cultural-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .cultural-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .cultural-content {
+            padding: 20px;
+        }
+        
+        .content-card {
+            /* border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); */
+            padding: 30px;
+            height: 100%;
+        }
+        
+        .initiative-title {
+            color: #275273;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+        }
+        
+        .initiative-subtitle {
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .list-styled {
+            padding-left: 20px;
+            list-style-type: none;
+            margin-bottom: 30px;
+        }
+        
+        .list-styled li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        .list-styled li:before {
+            content: "•";
+            position: absolute;
+            left: -20px;
+            color: #275273;
+            font-weight: bold;
+        }
+        
+        .culture-quote {
+            font-style: italic;
+            padding: 15px;
+            background-color: #f3f6f9;
+            border-left: 4px solid #275273;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 991px) {
+            .cultural-image {
+                height: 350px;
+                margin-bottom: 30px;
+            }
+        }
+        .strategic{
+            padding: 30px;
+            background-color:#f8f8f8;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="https://www.facebook.com/dinesh.gourisetty/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dineshgourisetty/#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fthatsdinesh" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner" id="Home">
+        <img src="image1.png" alt="Dinesh Gourisetty Banner">
+    </div>
+
+    <div class="about-us" id="About">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="Dineshgourisetty.jpg" alt="Dinesh Gourisetty" class="img-fluid">
+                </div>
+                <div class="about-text">
+                    <p class="about-subtitle " style="color:RGB(39, 82, 115);">Dinesh Gourisetty</p>
+                    <h2 class="about-title" style="text-align: left;">The Extraordinary Journey of a Multicultural Leader</h2>
+                    <p>
+                        In the ever-evolving landscape of Australian politics and community leadership, Dinesh Gourisetty has emerged as a driving force of innovation, resilience, and transformative vision. His journey from an Indian immigrant to a recognized political figure and community advocate is a testament to the power of determination, strategic thinking, and unwavering commitment to societal progress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="political" id="political">
+        <div class="containers">
+            <div class="section-heading">
+                <h2>Political Landscape: Breaking Barriers and Building Bridges</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-1">
+                    <!-- <div class="content-card h-100"> -->
+                        <div class="content-image">
+                            <img src="strategic.jpg" alt="Electoral Ambitions">
+                        </div>
+                        <div class="content-details">
+                            <h3 class="content-title">Electoral Ambitions and Community Representation</h3>
+                            <p class="content-text">Dinesh Gourisetty's foray into politics was driven by a desire to amplify the voices of multicultural communities. In the 2014 Victorian Electoral District of Tarneit, his campaign as a Liberal Party candidate made a strong impact:</p>
+                            <ul class="list-styled">
+                                <li>Secured 35.4% of votes, showcasing significant community support</li>
+                                <li>Championed community development and representation</li>
+                                <li>Challenged traditional political narratives, paving the way for future diverse leadership</li>
+                            </ul>
+                        </div>
+                    <!-- </div> -->
+                </div>
+                
+                <div class="col-lg-6 mb-1">
+                    <!-- <div class="content-card h-100"> -->
+                        <div class="content-image">
+                            <img src="president.jpg" alt="Leadership Aspirations">
+                        </div>
+                        <div class="content-details">
+                            <h3 class="content-title">Leadership Aspirations</h3>
+                            <p class="content-text">His campaign for President of the Victorian Liberal Party reflected his larger vision for an inclusive political landscape. Through this, he aimed to:</p>
+                            <ul class="list-styled">
+                                <li>Amplify multicultural voices in mainstream politics</li>
+                                <li>Encourage diverse communities to engage in civic processes</li>
+                                <li>Challenge existing political paradigms, advocating for change</li>
+                            </ul>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="container2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="Dinesh.jpg" alt="Education & Entrepreneurship">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Educational Foundation & Entrepreneurial Spirit</h2>
+                    <p class="card-description">Armed with a Master of Business Administration (MBA), Dinesh Gourisetty arrived in Australia not just with professional credentials but with an entrepreneurial mindset and a vision for reshaping community engagement. His ability to identify and address the needs of multicultural communities has been a cornerstone of his success.</p>
+                </div>
+                <div class="card-button">
+                    <a href="Blog.html" class="read-more">Read More</a>
+                </div>
+            </div>
+             
+            <div class="card">
+                <div class="card-image">
+                    <img src="spicezone.jpg" alt="Spice Zone">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Spice Zone: More Than a Grocery Store</h2>
+                    <p class="card-description">His entrepreneurial venture, Spice Zone, located in Footscray, Melbourne, is more than a traditional business—it serves as a cultural hub for the Indian diaspora. Through this initiative, Gourisetty has provided a place where immigrants can find a taste of home, preserved cultural connections for future generations, and created a platform for community interactions.</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+             
+            <div class="card">
+                <div class="card-image">
+                    <img src="vote.jpg" alt="Political Landscape">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Political Landscape: Breaking Barriers</h2>
+                    <p class="card-description">Dinesh Gourisetty's foray into politics was driven by a desire to amplify the voices of multicultural communities. In the 2014 Victorian Electoral District of Tarneit, his campaign as a Liberal Party candidate made a strong impact, securing 35.4% of votes and championing community development and representation.•	Challenged traditional political narratives, paving the way for future diverse leadership</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <div class="card-image">
+                    <img src="leader.jpg" alt="Leadership Aspirations">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Leadership Aspirations</h2>
+                    <p class="card-description">His campaign for President of the Victorian Liberal Party reflected his larger vision for an inclusive political landscape. Through this, he aimed to amplify multicultural voices in mainstream politics, encourage diverse communities to engage in civic processes, and challenge existing political paradigms, advocating for change.</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+             
+            <div class="card">
+                <div class="card-image">
+                    <img src="digital.jpg" alt="Cultural Advocacy">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Cultural Advocacy: Preserving Heritage</h2>
+                    <p class="card-description">Grounded in the philosophy of "Vasudhaiva Kutumbakam" (the world is one family), Australia Hindu Mahasabha Inc (AHMSI) is a reflection of Dinesh Gourisetty's commitment to cultural preservation and interfaith harmony, focusing on preserving Hindu traditions and promoting interfaith understanding and unity.</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+             
+            <div class="card">
+                <div class="card-image">
+                    <img src="community.jpg" alt="Community Leadership">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Community Leadership: Beyond Boundaries</h2>
+                    <p class="card-description">Gourisetty's contributions extend far beyond politics. His leadership roles include President of the Telugu Association of Australia, supporter of local sporting clubs, and advocate for immigrant communities, bridging their experiences with Australian civic life.</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+ 
+            <!-- <div class="card">
+                <div class="card-image">
+                    <img src="strategic.jpg" alt="Strategic Vision">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Strategic Vision</h2>
+                    <p class="card-description">Dinesh Gourisetty seamlessly integrates entrepreneurial insights with political strategy. His approach revolves around understanding the unique needs of diverse communities, creating inclusive spaces for engagement and growth, advocating for fair representation at all levels, and driving meaningful social and political change.</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div> -->
+
+            <!-- <div class="card">
+                <div class="card-image">
+                    <img src="digital.jpg" alt="Digital Presence">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Digital Presence and Ongoing Impact</h2>
+                    <p class="card-description">Dinesh Gourisetty continues to expand his influence through digital platforms, where he engages with a growing audience and mobilizes support for his initiatives. Connect with him on Instagram (@dineshgourisetty), Facebook (Dinesh Gourisetty), and X/Twitter (@thatsdinesh).</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="legacymaking.jpg" alt="legacy">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">A Legacy in the Making</h2>
+                    <p class="card-description">Dinesh Gourisetty’s journey exemplifies the impact of vision, dedication, and genuine commitment. From entrepreneurship to politics, he has consistently worked towards reshaping political landscapes, fostering cultural inclusivity, and inspiring generations to come. His legacy is not just in the positions he holds but in the communities he uplifts and the barriers he breaks.</p>
+                </div>
+                <div class="card-button">
+                    <button class="read-more">Read More</button>
+                </div>
+            </div> -->
+         </div>
+
+         <div class="pagination">
+             <a href="#" class="page-item"><i class="fas fa-chevron-left"></i></a>
+             <a href="#" class="page-item active">01</a>
+             <a href="#" class="page-item">02</a>
+             <span class="page-item">...</span>
+             <a href="#" class="page-item">12</a>
+             <a href="#" class="page-item"><i class="fas fa-chevron-right"></i></a>
+         </div>
+     </div>
+
+     <section class="cultural-section" id="cultural">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Cultural Advocacy: Preserving Heritage, Promoting Unity</h2>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="cultural-image">
+                        <img src="cultural.jpg" alt="Australia Hindu Mahasabha Inc">
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="content-card">
+                        <h3 class="initiative-title">Australia Hindu Mahasabha Inc (AHMSI)</h3>
+                        <p class="initiative-subtitle">"Vasudhaiva Kutumbakam" (The world is one family)</p>
+                        
+                        <div class="culture-quote">
+                            AHMSI is a reflection of Dinesh Gourisetty's commitment to cultural preservation and interfaith harmony.
+                        </div>
+                        
+                        <p>His efforts focus on:</p>
+                        <ul class="list-styled">
+                            <li>Preserving Hindu traditions and practices</li>
+                            <li>Promoting interfaith understanding and unity</li>
+                            <li>Creating platforms for cultural exchange, fostering a sense of belonging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0 order-lg-1 order-2">
+                    <div class="cultural-image">
+                        <img src="legacymaking.jpg" alt="Spice Zone Melbourne">
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 order-lg-2 order-1">
+                    <div class="content-card">
+                        <h3 class="initiative-title">Spice Zone: More Than a Grocery Store</h3>
+                        <p class="initiative-subtitle">A Cultural Hub in Footscray, Melbourne</p>
+                        
+                        <div class="culture-quote">
+                            His entrepreneurial venture, Spice Zone, located in Footscray, Melbourne, is more than a traditional business—it serves as a cultural hub for the Indian diaspora. 
+                        </div>
+                        
+                        <p>Through this initiative, Gourisetty has:</p>
+                        <ul class="list-styled">
+                            <li>Provided a place where immigrants can find a taste of home</li>
+                            <li>Preserved cultural connections for future generations</li>
+                            <li>Created a platform for community interactions and shared experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="strategic" id="strategic">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Strategic Vision: Blending Entrepreneurship with Political Advocacy</h2>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7">
+                    <div class="content-card">
+                       <p>Dinesh Gourisetty seamlessly integrates entrepreneurial insights with political strategy. His approach revolves around:</p>
+                        <ul class="list-styled">
+                            <li>Understanding the unique needs of diverse communities</li>
+                            <li>Creating inclusive spaces for engagement and growth</li>
+                            <li>Advocating for fair representation at all levels</li>
+                            <li>Driving meaningful social and political change</li>
+                            <li>Promote multicultural leadership</li>
+                            <li>Enhance political representation for diverse communities</li>
+                            <li>Build inclusive community frameworks</li>
+                            <li>Drive meaningful social progress</li>                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="cultural-image">
+                        <img src="vision.jpg" alt="Australia Hindu Mahasabha Inc">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+     <div class="heros">
+        <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-md-6">
+                      <h1>Be Part of the Transformation</h1>
+                      <p>Join Dinesh Gourisetty's mission to promote multicultural leadership, enhance political representation for diverse communities, build inclusive community frameworks, and drive meaningful social progress. His journey exemplifies the impact of vision, dedication, and genuine commitment.</p>
+                      <div class="email-box">
+                          <input type="email" placeholder="Enter Your Email">
+                          <button>Get Started</button>
+                      </div>
+                  </div>
+              
+                  <div class="col-md-6 mt-5 text-center images">
+                      <img src="dineshimage.jpg" alt="Dinesh Gourisetty">
+                  </div>
+              </div>
+         </div>
+      </div>
+
+      <footer class="footer" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="footer-logo">LOGO</div>
+                    <p class="para">Dinesh Gourisetty's legacy is not just in the positions he holds but in the communities he uplifts and the barriers he breaks. Stay tuned to his journey—because change is just the beginning.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/dinesh.gourisetty/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dineshgourisetty/#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fthatsdinesh"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="Contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-envelope"></i> contact@dineshgourisetty.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Melbourne, Victoria, Australia</p>
+                    <p><i class="fas fa-phone"></i> 123-456-7890</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+           © 2025 Dinesh Gourisetty. All Rights Reserved.
+            <a href="#">Privacy Policy | Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            let navbar = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("navbar-scrolled");
+                navbar.classList.remove("navbar-transparent");
+            } else {
+                navbar.classList.remove("navbar-scrolled");
+                navbar.classList.add("navbar-transparent");
+            }
+        });
+    </script>
+</body>
+</html>
