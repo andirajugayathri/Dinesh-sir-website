@@ -9,6 +9,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Legacy Section Styles */
+        .legacy-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .legacy-text {
+            flex: 1;
+            padding-right: 30px;
+        }
+        .legacy-image {
+            
+        }
+        .legacy-text h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color:#1c3f59;
+        }
+        
+        .legacy-image img {
+            width: 100%;
+            height:50%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Community Leadership Section Styles */
+        .community-section {
+            padding: 80px 0;
+        }
+        .community-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .community-image {
+            flex: 1;
+            padding-right: 30px;
+        }
+        .community-text {
+            flex: 1;
+            padding-left: 30px;
+        }
+        .community-section h2 {
+             text-align: center;
+             padding-bottom: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1c3f59;
+        }
+        .community-text h3 {
+            color:#1c3f59 ;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .community-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        .community-text ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .community-text ul li {
+            margin-bottom: 10px;
+        }
+        
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -47,18 +120,42 @@
         </div>
     </div>
 
-    <div class="aboutus" id="About">
-        <div class="about-container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 style="font-weight: bold; padding-bottom: 30px;" >Our Story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus at sapien hendrerit varius. Fusce efficitur, nunc et hendrerit scelerisque, nisi elit tincidunt lectus, nec volutpat enim neque et justo. Integer in mauris vel nisi fermentum ultricies.</p>
-                    <p>Donec dapibus, orci ut tincidunt cursus, ligula sapien vehicula nulla, nec pharetra tortor orci nec purus. Suspendisse potenti. Nam ut neque vel nisi sollicitudin scelerisque. Phasellus semper metus nec justo aliquam, vel tincidunt nulla posuere.</p>
-                    <p>Praesent euismod erat at eros eleifend, id finibus nulla gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris bibendum magna a lectus aliquam, et vehicula nulla varius.</p>
+        <!-- legacy-section -->
+    <div class="legacy-section" id="About">
+        <div class="container">
+            <div class="legacy-content">
+                <div class="legacy-text">
+                    <h2>A Legacy in the Making</h2>
+                    <!-- <div class="legacy-image">
+                        <img src="aboutus.jpg" alt="Dinesh Gourisetty" class="img-fluid">
+                    </div>     -->
+                    <p>Dinesh Gourisetty's journey exemplifies the impact of vision, dedication, and genuine commitment. From entrepreneurship to politics, he has consistently worked towards reshaping political landscapes, fostering cultural inclusivity, and inspiring generations to come.
+                     His legacy is not just in the positions he holds but in the communities he uplifts and the barriers he breaks.</p>
+                    <p><strong>Stay tuned to his journey—because change is just the beginning.</strong></p>
                 </div>
-                <div class="about-image">
-                    <img src="about.png" alt="About Us" class="img-fluid">
-                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <!-- Community Leadership Section - New Addition -->
+    <div class="community-section">
+        <h2>Community Leadership: Beyond Boundaries</h2>
+        <div class="container">
+            <div class="community-content">
+                <div class="community-image">
+                    <img src="aboutus.jpg" alt="Community Leadership" class="img-fluid">
+                </div>
+                <div class="community-text">
+                    <h3>Multifaceted Engagement</h3>
+                    <p>Gourisetty's contributions to the community extend far beyond politics. His leadership roles include:</p>
+                    <ul>
+                        <li>President of the Telugu Association of Australia, fostering cultural engagement</li>
+                        <li>Supporter of local sporting clubs, encouraging youth participation</li>
+                        <li>Advocate for immigrant communities, bridging their experiences with Australian civic life</li>
+                    </ul>
+                    <h3>Digital Presence and Ongoing Impact</h3>
+                    <p>Dinesh Gourisetty continues to expand his influence through digital platforms, where he engages with a growing audience and mobilizes support for his initiatives.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -121,38 +218,38 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="footer-logo">LOGO</div>
-                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum fringilla sapien a gravida.</p>
+                    <p class="para">Dinesh Gourisetty's legacy is not just in the positions he holds but in the communities he uplifts and the barriers he breaks. Stay tuned to his journey—because change is just the beginning.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/dinesh.gourisetty/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dineshgourisetty/#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fthatsdinesh"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-behance"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
                     <div class="footer-links">
                         <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="#Contact">Contact Us</a>
+                        <a href="#">About Us</a>
+                        <a href="Contact.html">Contact Us</a>
                     </div>
                 </div>
-                <div class="col-md-3" id="Contact">
+                <div class="col-md-3">
                     <h5>Contact Us</h5>
-                    <p><i class="fas fa-envelope"></i> support@xyz.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i>1234 xyz, TX 773</p>
+                    <p><i class="fas fa-envelope"></i> contact@dineshgourisetty.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Melbourne, Victoria, Australia</p>
                     <p><i class="fas fa-phone"></i> 123-456-7890</p>
                 </div>
             </div>
         </div>
         <hr>
         <div class="footer-bottom">
-           © 2025 XYZ, Inc. All Rights Reserved.
+           © 2025 Dinesh Gourisetty. All Rights Reserved.
             <a href="#">Privacy Policy | Terms & Conditions</a>
         </div>
     </footer>
