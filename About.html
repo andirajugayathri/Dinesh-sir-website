@@ -80,6 +80,21 @@
         .community-text ul li {
             margin-bottom: 10px;
         }
+        @media (max-width: 768px) {
+            .community-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .community-image,
+            .community-text {
+                padding: 0;
+                width: 100%;
+            }
+            .community-text ul {
+                list-style: none;
+                padding: 0;
+            }
+        }
         
     </style>
 </head>
